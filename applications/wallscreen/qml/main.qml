@@ -2,6 +2,7 @@ import QtQuick 2.0
 import QtQuick.Window 2.1
 
 import "diaporama"
+import "spaceapi"
 
 Window {
     color: "#000000"
@@ -22,6 +23,7 @@ Window {
         color: "#111"
 
         Image {
+            id: logo
             anchors {
                 horizontalCenter: parent.horizontalCenter
                 top: parent.top
@@ -30,6 +32,16 @@ Window {
             width: parent.width - 20
             fillMode: Image.PreserveAspectFit
             source: "../haum.png"
+        }
+
+        SpaceApi {
+            id: spaceapi
+            anchors {
+                horizontalCenter: parent.horizontalCenter
+                top: logo.bottom
+                topMargin: 10
+            }
+            width: parent.width - 20
         }
     }
 
