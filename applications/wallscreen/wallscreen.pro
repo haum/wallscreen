@@ -4,11 +4,13 @@ QT += qml quick
 CONFIG += c++11
 
 HEADERS += \
-    filelist.h
+    filelist.h \
+    dirtyirc.h
 
 SOURCES += \
     main.cpp \
-    filelist.cpp
+    filelist.cpp \
+    dirtyirc.cpp
 
 OTHER_FILES = qml/*.qml
 

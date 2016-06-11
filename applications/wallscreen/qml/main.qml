@@ -3,6 +3,7 @@ import QtQuick.Window 2.1
 
 import "diaporama"
 import "spaceapi"
+import "irc"
 
 Window {
     color: "#000000"
@@ -46,9 +47,14 @@ Window {
     }
 
     Diaporama {
+        id: dioporama
         anchors {
             fill: parent
             rightMargin: parent.width / 5
         }
+    }
+
+    IrcViewer {
+        anchors.fill: dioporama
     }
 }
