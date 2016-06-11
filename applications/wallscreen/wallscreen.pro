@@ -3,7 +3,12 @@ TEMPLATE = app
 QT += qml quick
 CONFIG += c++11
 
-SOURCES += main.cpp
+HEADERS += \
+    filelist.h
+
+SOURCES += \
+    main.cpp \
+    filelist.cpp
 
 OTHER_FILES = qml/*.qml
 
