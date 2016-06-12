@@ -4,6 +4,7 @@ import QtQuick.Window 2.1
 import "diaporama"
 import "spaceapi"
 import "irc"
+import "clock"
 
 Window {
     color: "#000000"
@@ -43,6 +44,15 @@ Window {
                 topMargin: 10
             }
             width: parent.width - 20
+        }
+
+        Clock {
+            anchors {
+                left: parent.left
+                right: parent.right
+                top: spaceapi.bottom
+                topMargin: 10
+            }
         }
     }
 
