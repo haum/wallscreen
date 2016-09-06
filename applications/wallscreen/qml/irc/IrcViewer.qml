@@ -18,10 +18,11 @@ ListView {
 
         Text {
             id: userbox
-            width: 100
+            width: 200
             clip: true
             horizontalAlignment: Text.AlignRight
             text: "<b>" + model.user + "</b>"
+            font.pixelSize: 25
             color: "#fff"
         }
         Text {
@@ -34,6 +35,7 @@ ListView {
             horizontalAlignment: Text.AlignLeft
             wrapMode: Text.WordWrap
             text: model.msg
+            font.pixelSize: 25
             color: "#fff"
         }
 
