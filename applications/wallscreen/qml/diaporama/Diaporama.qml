@@ -8,7 +8,10 @@ Item {
     property int time: 10
     property string path: "diaporama"
 
-    onNrChanged: sv.push({"item" : view, "properties" : {"nb" : nr}, "replace": true})
+    onNrChanged: {
+        console.log("diaporama: " + fl.files[nr])
+        sv.push({"item" : view, "properties" : {"nb" : nr}, "replace": true})
+    }
 
     FileList {
         id: fl
